@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Applying for a Team Form</title>
+	<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+	<link href="css/forms.css" rel="stylesheet">
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<section>
+			<h1>Applying for a Team Form</h1>
+			<p>Fill out the form below to join a team.</p>
+			<form action="https://e3vwdl4bpd.execute-api.us-west-2.amazonaws.com/default/API2SES" method="post">
+				<input type="hidden"
+				name="send_to"
+				value="darasimialabi13@gmail.com">
+				<fieldset>
+				<legend>Your contact information</legend>
+				<label for="name">Your name </label>
+					<input type="text" 
+					id="full-name" name="name">
+				<label for="Phone">Phone number</label>	
+				<input type="tel" id="Phone" name="Phone" placeholder="Remember your area code" >
+				<label for="email"> Email</label>
+				<input type="email" 
+					id="email" name="email">
+					</fieldset>
+					<fieldset>
+				<legend>About applying for a Team Form </legend>
+			<label for="date"> Date of birth </label>
+			<input type="date" 
+					id="date" name="date">	
+			<label for="qty">How many people would you like to sign up?</label>
+			<input type="number" 
+					id="qty" name="qty" min="1" max="10">
+					<p>What position do you play?</p>
+					<label>
+					<input type="radio"
+					name="position"
+					value="Guard"> Guard 
+				</label> 
+				<label>	
+					<input type="radio"
+					name="position"
+					value="Fowards">Fowards
+					</label> 
+					<label>
+						<input type="radio"
+					name="position"
+					value="Wing">Wing
+				</label>
+				<label>
+					<input type="radio"
+					name="position"
+					value="Big">Big 
+					</label>
+			<label for="experience"> 
+				How much experience do you have? </label>
+					<select id="experience" name="experience"> 
+						<option selected>Select one... </option>
+						<option value="Just started">Just started </option>
+						<option value="Leagues"> Leagues</option>
+						<option value="National team"> National team</option>
+						<option value="Semi Pro"> Semi Pro </option>
+						<option value="Pro"> Pro </option>
+				</select>
+			
+			<label for="comments">Any Questions or comments?:</label>
+			<textarea id="comments" name="comments" placeholder="Ask anything...."></textarea>
+
+			<label>
+			<input type="checkbox" 
+			value="subscribe" 
+			name="subscribe" checked> Suscribe for any updates!
+			</label>
+		</fieldset>
+		<button type="submit"> Submit </button>
+		</form>
+		</section>
+		<aside>
+			<h3>Our Location</h3>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4931.6073256564!2d-2.2482544781834535!3d51.82801697971801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487108a7d56aa6a1%3A0x66ff3e6eec2500d1!2sSt%20Peter&#39;s%20High%20School%2C%20Gloucester!5e0!3m2!1sen!2suk!4v1752896223583!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			<address>
+				St Peter's High School, Gloucester &middot;
+				 Stroud Rd, Tuffley, Gloucester GL4 0DD &middot;
+				 Gloucester GL4 0DD
+			</address>
+		</aside>
+	</div>
+	<script src="js/forms.js"></script>
+</body>
+</html>
+
+
+
+
+
